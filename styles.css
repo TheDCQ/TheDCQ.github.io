@@ -181,7 +181,7 @@ div.brackets a:hover:before, div.brackets a:hover:after
 .Section2{
     color:  #3232FF;
     background-color: white;
-    height: 60%;
+    height: 80%;
     top: 110%;
     position: absolute;
     width: 100%;
@@ -190,7 +190,7 @@ div.brackets a:hover:before, div.brackets a:hover:after
     color:  #3232FF;
     background-color: #3232FF;
     height: 60%;
-    top: 170%;
+    top: 190%;
     position: absolute;
     width: 100%;
 }
@@ -462,4 +462,48 @@ div.brackets a:hover:before, div.brackets a:hover:after
     height: 100%;
     width: 5em;
     background-color: #3232FF;
+}
+.Card1 {
+    background-color: #3232FF;
+    font-family: Raleway;
+    position: absolute;
+    top:25%;
+    left: 10%;
+    height: 50%;
+    width: 20%;
+    border-radius: 50px;
+}
+.Card1 h1{
+    text-align: center;
+    font-size: 200%;
+    color: white;
+    
+}
+.Card1 p{
+    text-align: center;
+    font-size: 110%;
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white;
+    
+}
+.Card2 {
+    background-color: #3232FF;
+    position: absolute;
+    top:25%;
+    left: 40%;
+    height: 50%;
+    width: 20%;
+    border-radius: 50px;
+}
+.Card3 {
+    background-color: #3232FF;
+    position: absolute;
+    top:25%;
+    left: 70%;
+    height: 50%;
+    width: 20%;
+    border-radius: 50px;
 }
