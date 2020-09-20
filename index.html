@@ -49,6 +49,26 @@
     <h1> Testing</h1>
   </div>
   <div class="Section3" data-aos="slide-up" data-aos-offset="300" data-aos-easing="ease-in-line" data-aos-duration="1000">
+    <div id="paypal-button-container"></div>
+      <script src="https://www.paypal.com/sdk/js?client-id=AdnGpCWSEh4bkcztR1D_tVORcarPD4WO72HDAJO1sU-hZFJRsZgC4Dni0Kr7OfUGt1nsArQDUIX6sHEn&vault=true" data-sdk-integration-source="button-factory"></script>
+      <script>
+        paypal.Buttons({
+            style: {
+                shape: 'pill',
+                color: 'white',
+                layout: 'vertical',
+                label: 'subscribe'
+            },
+            createSubscription: function(data, actions) {
+              return actions.subscription.create({
+                'plan_id': 'P-0UU237359H2627054L5TZSOI'
+              });
+            },
+            onApprove: function(data, actions) {
+              alert(data.subscriptionID);
+            }
+        }).render('#paypal-button-container');
+      </script>
     <h1> Testing</h1>
   </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
