@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen"/>
+    <title>Daily Coding Question</title>
+  </head>
+  
+  <body>
+    
+    <div id="root">
+
+     <task-list> </task-list>
+
+    </div>
+    <div class = "Header">
+      <img src="Assets/logo.png" alt="Daily Coding Question" height="600" width="900" style="margin:20px 20px">
+      <div class='spacer'></div>
+      <div class="container white brackets">
+        <a>Subscribe</a>
+        <a>What are we?</a>
+        <a>Demo</a>
+        <a>Free Trial</a>
+        <a>Testimonials</a>
+    </div>
+  </div>
+  <input class="c-checkbox" type="checkbox" id="checkbox">
+<div class="c-formContainer">
+  <form class="c-form" action="">
+    <input class="c-form__input" placeholder="E-mail" type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
+    <label class="c-form__buttonLabel" for="checkbox">
+      <button class="c-form__button" type="button" id="SubscribeButton" >Subscribe</button>
+    </label>
+    <label class="c-form__toggle" for="checkbox" data-title="Subscribe"></label>
+  </form>
+</div>
+<div class = 'HeaderTextBox'>
+  <h1>CS problems. </h1>
+  <h1>Directly in your inbox.</h1>
+</div>
+  <div class = "Section">
+    <div class = "SectionText">
+      <h1> Practice makes perfect. Why not practice every day then? </h1>
+      <p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis rhoncus lectus. Sed facilisis, lectus id pellentesque egestas, libero mauris luctus diam, ac pretium risus est hendrerit eros. Sed vel leo diam. Suspendisse accumsan nulla eget accumsan tempor. Vivamus tempus sed mi vel facilisis. Cras dignissim libero nisi, ac pharetra turpis gravida sit amet. Nam porta, nisi vel pharetra finibus, purus nibh facilisis lorem, vitae convallis magna elit vitae odio. Donec justo nisi, mattis sed sagittis a, euismod quis arcu. Etiam dapibus orci ac augue egestas, id ultricies tellus interdum. Curabitur vitae ultricies erat, et ultrices justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam et venenatis nulla. Nullam tristique libero sed turpis posuere, a accumsan justo auctor. Phasellus sit amet eros eleifend, finibus justo quis, mattis felis.
+
+        Sed egestas massa nec nunc sollicitudin ullamcorper. Donec a dictum erat. Nullam massa lorem, maximus nec diam vel, efficitur varius magna. Sed faucibus varius lobortis. Maecenas fringilla urna eget egestas dictum. Mauris in tempor massa. Etiam pellentesque vel ipsum sed iaculis.</p1>
+    </div>
+  </div>
+  <div class="Section2" >
+    <h1> Testing</h1>
+  </div>
+  <div class="Section3" data-aos="slide-up" data-aos-offset="300" data-aos-easing="ease-in-line" data-aos-duration="1000">
+    <h1> Testing</h1>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    
+  
+  </body>
+</html>
