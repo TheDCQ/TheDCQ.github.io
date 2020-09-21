@@ -1,6 +1,8 @@
 html, body
 {
     margin: 0px;
+    background: rgb(36,37,146);
+background: radial-gradient(circle, rgba(36,37,146,1) 0%, rgba(41,41,152,1) 100%);
 }
 @font-face {
     font-family: Raleway;
@@ -26,7 +28,7 @@ header, footer
 
 header h1
 {
-    color: #AAA;
+    color: white;
     font-size: 20px;
     font-weight: lighter;
     margin-bottom: 0px;
@@ -34,28 +36,31 @@ header h1
 
 header span
 {
-    color: #AAA;
+    color: white;
 }
 
 footer span
 {
-  color: #FFF;
+  color: white;
 }
 
 div.container
 {
+    background-color:  transparent;
     font-family: Raleway;
     margin: 0 auto;
 	padding: 1em 1em;
-    text-align: center;
+    text-align: right;
     height: 1em;
+    width: 80%;
+    
 }
 
 div.container a
 {
-    color: #3232FF;
+    color: #F64C72;
     text-decoration: none;
-    font: 20px Raleway;
+    font: 1.2vw Raleway;
     margin: 0px 30px;
     padding: 0px 10px;
     position: relative;
@@ -75,7 +80,7 @@ div.container a
 
 .indigo
 {
-    background: #3f51b5;
+    background: #384aaf;
 }
 
 .blue
@@ -145,7 +150,7 @@ div.container a
 {
     position: absolute;
     opacity: 0;
-    font-size: 20px;
+    font-size: 100%;
     top: 0px;
     transition: all 0.25s;
 }
@@ -171,24 +176,24 @@ div.brackets a:hover:before, div.brackets a:hover:after
 }
 
 .Section{
-    color:  #3232FF;
-    background-color: #3232FF;
-    height: 60%;
+    color:   #242592;
+    background-color:  whitesmoke;
+    height: 30%;
     top: 50%;
     position: absolute;
     width: 100%;
 }
 .Section2{
-    color:  #3232FF;
-    background-color: white;
+    color:   transparent;
+    background-color: whitesmoke;
     height: 80%;
-    top: 110%;
+    top: 80%;
     position: absolute;
     width: 100%;
 }
 .Section3{
-    color:  #3232FF;
-    background-color: #3232FF;
+    color:   #242592;
+    background-color:  transparent;
     height: 60%;
     top: 190%;
     position: absolute;
@@ -199,19 +204,18 @@ div.brackets a:hover:before, div.brackets a:hover:after
 }
 .SectionText h1{
     text-align: center;
-    font-size: 250%;
+    font-size: 4vmin;
     width: 100%;
-    color: white;
+    color: #242592;
     
 }
 .SectionText p1{
-    
+    color: #242592;
     text-align: start;
     position: absolute;
     padding-left: 2%;
     padding-right: 2%;
-    font-size: 130%;
-    color: white;
+    font-size: 2vmin;
     
     
 }
@@ -225,11 +229,14 @@ div.brackets a:hover:before, div.brackets a:hover:after
     font-family: Raleway;
 }
 .HeaderTextBox h1{
-    font-size: 350%;
+    color: white;
+    font-size: 5vmin;
 }
 .c-checkbox {
     display: none;
     position: absolute;
+    width: 30%;
+    height: 30%;
     top: 30%;
     font-family: Raleway;
 }
@@ -259,6 +266,8 @@ div.brackets a:hover:before, div.brackets a:hover:after
     height: 6.25em;
 }
 .c-formContainer {
+    height: 30%;
+    width: 30%;
     position: absolute;
     top: 30%;
     margin-left: auto;
@@ -282,7 +291,7 @@ div.brackets a:hover:before, div.brackets a:hover:after
     justify-content: center;
 }
 .c-form__toggle {
-    color: #3232FF;
+    color:  #242592;
     top: 0;
     cursor: pointer;
     z-index: 1;
@@ -309,7 +318,7 @@ div.brackets a:hover:before, div.brackets a:hover:after
     transition: 0s;
 }
 .c-form__input {
-    color: #3232FF;
+    color:  #242592;
     height: 100%;
     width: 100%;
     padding: 0 0.714em;
@@ -318,19 +327,19 @@ div.brackets a:hover:before, div.brackets a:hover:after
     color: currentColor;
 }
 .c-form__input:required:valid {
-    color: #3232FF;
+    color:  #242592;
     opacity: 60%;
     
 }
 .c-form__input:required:valid + .c-form__buttonLabel {
-    color: #3232FF;
+    color:  #242592;
     
 }
 .c-form__input:required:valid + .c-form__buttonLabel::before {
     pointer-events: initial;
 }
 .c-form__buttonLabel {
-    color: #3232FF;
+    color:  #242592;
     height: 100%;
     width: auto;
 }
@@ -347,7 +356,7 @@ div.brackets a:hover:before, div.brackets a:hover:after
     padding: 0;
     height: 100%;
     width: 5em;
-    background-color: #3232FF;
+    background-color: #242592;
 }
 
 .c-checkbox {
@@ -380,6 +389,8 @@ div.brackets a:hover:before, div.brackets a:hover:after
 }
 .c-formContainer {
     position: relative;
+    height: 30%;
+    width: 30%;
     font-weight: 700;
 }
 .c-form, .c-form__toggle {
@@ -389,6 +400,8 @@ div.brackets a:hover:before, div.brackets a:hover:after
     transition: 0.2s;
 }
 .c-form {
+    height: 9vmin;
+    width: 29vmin;
     left: 50%;
     transform: translateX(-50%);
     padding: 0.625em;
@@ -398,7 +411,9 @@ div.brackets a:hover:before, div.brackets a:hover:after
     justify-content: center;
 }
 .c-form__toggle {
-    color: #3232FF;
+    height: 9vmin;
+    width: 29vmin;
+    color:  #242592;
     top: 0;
     cursor: pointer;
     z-index: 1;
@@ -435,7 +450,7 @@ div.brackets a:hover:before, div.brackets a:hover:after
     color: currentColor;
 }
 .c-form__input:required:valid {
-    color: #3232FF;
+    color:  #242592;
 }
 .c-form__input:required:valid + .c-form__buttonLabel {
     color: #fff;
@@ -461,27 +476,28 @@ div.brackets a:hover:before, div.brackets a:hover:after
     padding: 0;
     height: 100%;
     width: 5em;
-    background-color: #3232FF;
+    background-color:  #242592;
 }
 .Card1 {
-    background-color: #3232FF;
+    background: rgb(36,37,146);
+background: radial-gradient(circle, rgba(36,37,146,1) 0%, rgba(41,41,152,1) 100%);
     font-family: Raleway;
     position: absolute;
     top:25%;
     left: 10%;
-    height: 50%;
-    width: 20%;
+    height: 40vh;
+    width: 20vw;
     border-radius: 50px;
 }
 .Card1 h1{
     text-align: center;
-    font-size: 200%;
-    color: white;
+    font-size: 4vmin;
+    color: #F64C72;
     
 }
 .Card1 p{
     text-align: center;
-    font-size: 110%;
+    font-size: 2vmin;
     margin-top:auto;
     margin-bottom: auto;
     margin-left: 5%;
@@ -490,16 +506,34 @@ div.brackets a:hover:before, div.brackets a:hover:after
     
 }
 .Card2 {
-    background-color: #3232FF;
-    position: absolute;
+    background: rgb(36,37,146);
+background: radial-gradient(circle, rgba(36,37,146,1) 0%, rgba(41,41,152,1) 100%);
+    position: absolute; 
     top:25%;
     left: 40%;
-    height: 50%;
-    width: 20%;
+    height: 40vh;
+    width: 20vw;
     border-radius: 50px;
 }
+.Card2 h1{
+    text-align: center;
+    font-size: 4vmin;
+    color: #F64C72;
+    
+}
+.Card2 p{
+    text-align: center;
+    font-size: 2vmin;
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white;
+    
+}
 .Card3 {
-    background-color: #3232FF;
+    background: rgb(36,37,146);
+background: radial-gradient(circle, rgba(36,37,146,1) 0%, rgba(41,41,152,1) 100%);
     position: absolute;
     top:25%;
     left: 70%;
