@@ -27,8 +27,8 @@
 <div class="c-formContainer">
   <form class="c-form" action="">
     <input class="c-form__input" placeholder="E-mail" id="Email" type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required >
-    <label class="c-form__buttonLabel" for="checkbox">
-      <button class="c-form__button" type="button" id="SubscribeButton" >Subscribe</button>
+    <label class="c-form__buttonLabel" for="checkbox" onclick="Subs();">
+      <button class="c-form__button" type="button" id="SubscribeButton" onclick="Subs();">Subscribe</button>
     </label>
     <label class="c-form__toggle" for="checkbox" data-title="Subscribe">
       <script>
@@ -94,7 +94,7 @@ iam pellentesque vel ipsum sed iaculis.</p1>
             onApprove: function(data, actions) {
               alert(data.subscriptionID);
               var xhr = new XMLHttpRequest();
-              xhr.open('GET', "http://5.12.105.234:8080/subscribe?mail=" + document.getElementById("Email") +"&difficulty=medium", true);
+              xhr.open('GET', "http://5.12.105.234:8800/subscribe?mail=" + document.getElementById("Email") +"&difficulty=medium", true);
               xhr.send(null);
             }
         }).render('#paypal-button-container');
